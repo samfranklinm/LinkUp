@@ -35,7 +35,7 @@ export default function Feed() {
 
         db.collection('posts').add({
             name: user.displayName,
-            description: user.email,
+            description: "We can use Moment (a timestamp library)",
             message: input,
             photoUrl: user.photoUrl || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
