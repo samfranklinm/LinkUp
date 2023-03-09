@@ -5,13 +5,22 @@ import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import MyProfile from './components/Profile/MyProfile';
+import UserProfile from './components/Profile/UserProfile';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Provider store={store}>
+        <Routes>
+          <Route exact path="/" element={<App />} />
+          <Route exact path="/myprofile" element={<MyProfile />} />
+          <Route exact path="/userprofile" element={<UserProfile />} />
+        </Routes>
+      </Provider>
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -7,6 +7,8 @@ import Feed from "./components/Feed/Feed";
 import { login, logout, selectUser } from './features/userSlice';
 import Login from "./components/Login/Login";
 import { auth } from './firebase';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import AboutMe from "./components/Profile/Body/AboutMe";
 
 function App() {
   const user = useSelector(selectUser)
@@ -31,7 +33,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <div>
+    <>
       {!user ? <Login /> : (
         <div className="app">
           <Header />
@@ -41,8 +43,7 @@ function App() {
           </div>
         </div>
       )}
-
-    </div>
+    </>
   );
 }
 
