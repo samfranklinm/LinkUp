@@ -7,6 +7,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import logo from './icons/L.png';
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -25,7 +26,7 @@ function Header() {
                 </div>
 
                 <div className="header__right">
-                    <HeaderOption Icon={HomeIcon} title="Home" />
+                    <Link to="/"><HeaderOption Icon={HomeIcon} title="Home" /></Link>
                     <HeaderOption Icon={ChatIcon} title="Messaging" />
                     <HeaderOption Icon={NotificationsIcon} title="Notifications" />
                     <NavMenu />

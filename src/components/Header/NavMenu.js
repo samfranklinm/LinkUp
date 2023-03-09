@@ -8,9 +8,9 @@ import { useDispatch } from 'react-redux';
 import logoutuser from './icons/log-out.png';
 import myprofile from './icons/user.png';
 import usersettings from './icons/settings.png';
+import { Link } from "react-router-dom";
 
-
-function NavMenu({ onClick }) {
+function NavMenu() {
     const [open, setOpen] = useState(false);
 
     let menuRef = useRef();
@@ -24,8 +24,6 @@ function NavMenu({ onClick }) {
         };
 
         document.addEventListener("mousedown", handler);
-
-
         return () => {
             document.removeEventListener("mousedown", handler);
         }
@@ -39,7 +37,6 @@ function NavMenu({ onClick }) {
     };
 
     const user = useSelector(selectUser);
-
     return (
         <div className='menu-container' ref={menuRef}>
             <div className='menu-trigger' onClick={() => { setOpen(!open) }}>
@@ -47,12 +44,15 @@ function NavMenu({ onClick }) {
             </div>
             <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
                 <ul>
-                    <DropDownItem img={myprofile} text={"My Profile"} />
+                    <Link to="/myprofile">
+                        <DropDownItem img={myprofile} text={"My Profile"} />
+                    </Link>
                     <DropDownItem img={usersettings} text={"Settings"} />
                     <div onClick={logoutOfApp}> <DropDownItem img={logoutuser} text={"Logout"} /></div>
                 </ul>
             </div >
         </div >
+
     )
 }
 
