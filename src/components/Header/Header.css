@@ -20,6 +20,7 @@
     object-fit: contain;
     height: 40px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .header__search {
