@@ -4,12 +4,10 @@
     display: flex;
     justify-content: space-evenly;
     border-bottom: 0.1px solid lightgrey;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+    width: 100vw;
+    height: 75px;
     z-index: 999;
     background-color: white;
-
 }
 
 .header__left {

@@ -1,0 +1,54 @@
+.sidebar-container {
+    background-color: black;
+    width: 200px;
+    height: 100vh;
+    display: block;
+    padding-left: 0px;
+}
+
+.sidebar-profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 144px;
+    margin: 20px;
+    padding: 0;
+}
+
+.h2-div {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.options-container {
+    margin-top: 20px;
+}
+
+.about-me {
+    background-color: #052BAF;
+    color: white;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 20px;
+
+}
+
+.about-me:hover {
+    background-color: #005CC9;
+}
