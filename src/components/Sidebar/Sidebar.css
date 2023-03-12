@@ -16,17 +16,26 @@
 }
 
 .sidebar__avatar {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+
 }
 
 .sidebar__top>h2 {
-  font-size: 14px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .sidebar__top>h4 {
-  color: gray;
+  color: rgb(83, 83, 83);
+  margin-top: 10px;
   font-size: 12px;
 }
+
+.sidebar__progressbar{
+  margin: 0px;
+}
+
 
 .sidebar__top {
   display: flex;
@@ -130,6 +139,7 @@
   margin-right: 10px;
   margin-left: 5px;
 }
+
 
 
 @media screen and (max-width: 750px) {
