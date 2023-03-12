@@ -1,0 +1,62 @@
+/* body {
+    margin: 20px;
+    padding: 0;
+    font-family: sans-serif;
+} */
+
+body {
+    background-color: #e8e8e8;
+}
+
+.body-container {
+    display: flex;
+    justify-content: start;
+}
+
+.schedule-body {
+    width: 1000px;
+    height: 840px;
+}
+
+.schedule-text {
+    margin-top: 20px;
+    padding-left: 80px;
+    line-height: 30px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.hr-container {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    width: 927px;
+    margin-left: 79px;
+    display: flex;
+    color: #919191;
+}
+
+.calendar-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px;
+    border-style: outset;
+    border-color: black;
+    border-radius: 10px;
+    width: 95%;
+    height: 83%;
+    margin-left: 70px;
+}
+
+.calendar {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+
+.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+    height: 100%;
+}

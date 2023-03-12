@@ -1,10 +1,10 @@
-import Header from "../Header/Header";
+import AboutMe from './AboutMe';
+import './MyProfile.css';
 
 function MyProfile() {
     return (
         <div>
-            <Header />
-            <h1> My Profile </h1>
+            <AboutMe />
         </div>
     )
 };
