@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link, useNavigate } from 'react-router-dom'
 import HeaderOption from './HeaderOption';
 import NavMenu from './NavMenu';
 import SearchIcon from '@material-ui/icons/Search';
@@ -7,9 +8,15 @@ import HomeIcon from '@material-ui/icons/Home';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import logo from './icons/L.png';
-import { Link } from 'react-router-dom'
+
 
 function Header() {
+    const navigate = useNavigate();
+
+    function goHome() {
+        navigate('/');
+    }
+
     return (
         <>
             <div className="header">
@@ -17,6 +24,8 @@ function Header() {
                     <img
                         src={logo}
                         alt="LinkUp Logo"
+                        onClick={goHome}
+                        style={{ cursor: 'pointer' }}
                     />
 
                     <div className="header__search">

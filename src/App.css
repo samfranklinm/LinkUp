@@ -11,9 +11,7 @@
 
 .app__body {
     display: flex;
+    justify-content: space-around;
     margin-top: 35px;
-    margin-bottom: 30px;
-    max-width: 1050px;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 1200px;
 }
