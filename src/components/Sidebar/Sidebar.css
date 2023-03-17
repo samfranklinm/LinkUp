@@ -32,10 +32,9 @@
   font-size: 12px;
 }
 
-.sidebar__progressbar{
+.sidebar__progressbar {
   margin: 0px;
 }
-
 
 .sidebar__top {
   display: flex;
@@ -138,6 +137,11 @@
 .sidebar__hash {
   margin-right: 10px;
   margin-left: 5px;
+}
+
+.MuiAvatar-root.MuiAvatar-circle.sidebar__avatar {
+  width: 80px;
+  height: 80px;
 }
 
 
