@@ -19,11 +19,12 @@
 }
 
 .feed__input {
+    color: #939393;
+    background-color: rgba(0, 0, 0, 0.07);
     border: 1px solid lightgray;
     border-radius: 30px;
     display: flex;
     padding: 10px;
-    color: gray;
     padding-left: 15px;
 
 }
@@ -31,6 +32,7 @@
 .feed__input>form {
     display: flex;
     width: 100%;
+
 }
 
 .feed__input>form>input {
@@ -39,6 +41,8 @@
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.0);
+
 }
 
 .feed__input>form>button {
