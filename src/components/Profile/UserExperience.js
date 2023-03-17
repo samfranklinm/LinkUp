@@ -9,13 +9,10 @@ function UserExperience() {
             <div>
                 <Header />
             </div>
-
             <div style={{ display: 'flex' }}>
                 <ProfileSidebar />
                 <h3 style={{ color: 'black' }}>User Experience</h3>
             </div>
-
-
         </>
     );
 }
