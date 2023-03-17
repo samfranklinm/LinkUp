@@ -1,0 +1,80 @@
+.experience-text {
+  line-height: 0.1px;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 7px;
+}
+
+.experience-body {
+  margin-top: 40px;
+  padding-left: 5px;
+  margin-left: 45px;
+  margin-right: 5px;
+  width: 23%;
+  height: 80%;
+}
+
+.experience-hr {
+  width: 100%;
+}
+
+.projects-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.internships-text {
+  line-height: 0.1px;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 7px;
+}
+
+.internships-hr {
+  width: 100%;
+}
+
+.internships-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.internships-body {
+  margin-top: 40px;
+  padding-left: 5px;
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 23%;
+  height: 80%;
+}
+
+.past_assignments-text {
+  line-height: 0.1px;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 7px;
+}
+
+.past_assignments-hr {
+  width: 100%;
+}
+
+.past_assignments-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.past_assignments-body {
+  margin-top: 40px;
+  padding-left: 5px;
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 23%;
+  height: 80%;
+}

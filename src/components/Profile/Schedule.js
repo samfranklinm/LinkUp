@@ -1,6 +1,5 @@
 /* 
 In the body of the page create the following components (all in this file)
-
 */
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
