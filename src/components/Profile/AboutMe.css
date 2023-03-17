@@ -1,0 +1,202 @@
+.aboutme-text {
+    line-height: 0.1px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+
+.about-hr {
+    width:100%;
+}
+
+.aboutme-info{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+
+
+.ab-sub-info{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 250;
+    color: #313131;
+}
+
+.ab-sub-title{
+    text-align: left;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.classes-text {
+    line-height: 0.1px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+
+.classes-hr {
+    width:100%;
+}
+
+.classes-info{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.aboutme-classes{
+    width: 23%;
+    margin-top: 40px;
+    padding-left: 5px;
+    margin-left: 25px;
+    margin-right:5px;
+}
+
+.classes-body {
+   margin-top: 30px;
+}
+
+.c-sub-info{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 250;
+    color: #313131;
+}
+
+.c-sub-title{
+    text-align: left;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.reviews-text {
+    line-height: 0.1px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+
+.reviews-hr {
+    width:100%;
+}
+
+.reviews-info{
+    padding:2px;
+    border-radius: 10px;
+}
+
+.reviews-body {
+    margin-top: 40px;
+    padding-left: 5px;
+    margin-left: 25px;
+    margin-right:5px;
+    width: 23%;
+    height: 80%;
+    
+}
+
+.review-body {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.r-sub-info{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 250;
+    color: #313131;
+}
+
+.r-sub-title{
+    width: 55%;
+    white-space: nowrap;
+    text-align: left;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.r-title{
+    display: inline-flex;
+}
+
+.starsI{
+    padding-left: 30px;
+    width: 50%;
+}
+.r-und-title{
+
+    text-align: left;
+    color: #949494;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mygroups-text {
+    line-height: 0.1px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+
+.mygroups-hr {
+    width:100%;
+}
+
+.mygroups-info{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+
+
+.mygroups-body {
+    margin-top: 40px;
+    padding-left: 5px;
+    margin-left: 45px;
+    margin-right:5px;
+    width: 23%;
+    height: 80%;
+}
+
+.mg-sub-info{
+    line-height: 00.1px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 250;
+    color: #313131;
+}
+
+.mg-sub-title{
+    text-align: left;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.body-container {
+    display: flex;
+    justify-content: start;
+    
+}
+
+.body-container {
+    display: flex;
+    justify-content: start;
+    
+}
+.colorPrimary {
+    color: yellow;
+}
