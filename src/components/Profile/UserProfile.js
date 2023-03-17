@@ -1,11 +1,10 @@
-import UserAboutMe from "./UserAboutMe";
-import './MyProfile.css'
-
+import Header from "../Header/Header";
 function UserProfile() {
-  return (
-    <>
-      <UserAboutMe />
-    </>
-  )
+    return (
+        <div>
+            <Header />
+            <h1> User Profile </h1>
+        </div>
+    )
 };
 export default UserProfile;

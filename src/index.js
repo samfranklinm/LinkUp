@@ -11,9 +11,6 @@ import UserProfile from './components/Profile/UserProfile';
 import AboutMe from './components/Profile/AboutMe';
 import Experience from './components/Profile/Experience';
 import Schedule from './components/Profile/Schedule';
-import UserAboutMe from './components/Profile/UserAboutMe';
-import UserExperience from './components/Profile/UserExperience';
-import UserSchedule from './components/Profile/UserSchedule';
 
 
 ReactDOM.render(
@@ -22,16 +19,11 @@ ReactDOM.render(
       <Provider store={store}>
         <Routes>
           <Route exact path="/" element={<App />} />
-          { /* My Profile Links */}
           <Route exact path="/myprofile" element={<MyProfile />} />
           <Route exact path="/myprofile/aboutme" element={<AboutMe />} />
           <Route exact path="/myprofile/experience" element={<Experience />} />
           <Route exact path="/myprofile/schedule" element={<Schedule />} />
-          { /* User Profile Links */}
           <Route exact path="/userprofile" element={<UserProfile />} />
-          <Route exact path="/userprofile/aboutme" element={<UserAboutMe />} />
-          <Route exact path="/userprofile/experience" element={<UserExperience />} />
-          <Route exact path="/userprofile/schedule" element={<UserSchedule />} />
         </Routes>
       </Provider>
     </React.StrictMode>
