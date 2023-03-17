@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../features/userSlice';
 import { Link } from "react-router-dom";
 import adam from '../icons/adam.jpg';
+import add from '../icons/add.png';
 import './ProfileSidebar.css';
 
 
@@ -77,6 +78,10 @@ function ProfileSidebar() {
                                 <div className="about-me"> Schedule </div>
                             </Link>
                         </div>
+
+                        <div onClick={handleAddClick}>
+                            <img className="add-img" src={add} alt="add-img"></img>
+                        </div>
                     </div>
 
             }
@@ -86,6 +91,10 @@ function ProfileSidebar() {
 
         </div>
     );
+}
+
+function handleAddClick() {
+    alert('Request Sent!');
 }
 
 export default ProfileSidebar;

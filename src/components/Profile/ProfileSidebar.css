@@ -19,6 +19,22 @@
     padding: 0;
 }
 
+.add-img {
+    position: absolute;
+    top: 600px;
+    left: 70px;
+    width: 65px;
+    height: 65px;
+    border-radius: 144px;
+    margin: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.add-img:hover {
+    opacity: 0.8;
+}
+
 .h2-div {
     display: flex;
     justify-content: center;
