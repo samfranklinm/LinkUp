@@ -1,11 +1,11 @@
-import { Avatar } from '@material-ui/core'
-import React from 'react'
+import React from 'react';
+import './Sidebar.css'
+import { Avatar } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { selectUser } from "../../features/userSlice";
 import { Link } from "react-router-dom";
-import './Sidebar.css'
-import ProgressBar from './ProgressBar';
 import { Rating } from '@mui/material';
+import ProgressBar from './ProgressBar';
 import adam from '../icons/adam.jpg';
 import brandon from '../icons/brandon.jpg';
 import samantha from '../icons/samantha.jpg';
