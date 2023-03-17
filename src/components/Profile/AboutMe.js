@@ -1,11 +1,10 @@
 import Header from "../Header/Header";
 import ProfileSidebar from "./ProfileSidebar"
 import './AboutMe.css';
-import StarIcon from '@mui/icons-material/Star';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
+import { Rating } from '@mui/material';
 
 function AboutMe() {
-    
+
     return (
         <>
             <div>
@@ -48,7 +47,7 @@ function AboutMe() {
     );
 }
 
-function AboutMeSub(){
+function AboutMeSub() {
     return (
         <div className="aboutme-info">
             <div className="major-body">
@@ -61,7 +60,7 @@ function AboutMeSub(){
             </div>
             <div className="career-body">
                 <h2 className="ab-sub-title">Aspiring Career</h2>
-                <h3 className="ab-sub-info">Title of career and an explanation (optional)</h3>
+                <h3 className="ab-sub-info">Software Engineer</h3>
             </div>
             <div className="bio-body">
                 <h2 className="ab-sub-title">Biography</h2>
@@ -71,7 +70,7 @@ function AboutMeSub(){
     )
 }
 
-function Classes(){
+function Classes() {
     return (
         <div className="classes-info">
             <div className="class-body">
@@ -97,7 +96,7 @@ function Classes(){
 }
 
 
-function MyGroups(){
+function MyGroups() {
     return (
         <div className="mygroups-info">
             <div className="group-body">
@@ -125,60 +124,44 @@ function MyGroups(){
     )
 }
 
-function Reviews(){
+function Reviews() {
     return (
-        <div className = "reviews-info">
+        <div className="reviews-info">
             <div className="review-body">
                 <div className="r-title">
                     <h2 className="r-sub-title">Anonymous User</h2>
                     <div className="starsI">
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
+                        <Rating className='sidebar__rating' name="read-only" value={5} size="medium" readOnly />
                     </div>
                 </div>
                 <h1 className="r-und-title">Reviewed on February 17, 2023</h1>
                 <h3 className="r-sub-info">Harry was very open minded when I was working with him. We worked on a group project and he would always respond quickly. He is friendly and would make sure we were all on task and moving according to our timeline.</h3>
             </div>
-            <div className="review-body">
+            {/* <div className="review-body">
                 <div className="r-title">
                     <h2 className="r-sub-title">Anonymous User</h2>
                     <div className="starsI">
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarBorderIcon color="primary" />
-                        <StarBorderIcon color="primary" />
+                        <Rating className='sidebar__rating' name="read-only" value={5} size="medium" readOnly />
                     </div>
                 </div>
                 <h1 className="r-und-title">Reviewed on February 09, 2023</h1>
                 <h3 className="r-sub-info">Harry was very open minded when I was working with him. We worked on a group project and he would always respond quickly. He is friendly and would make sure we were all on task and moving according to our timeline.</h3>
-            </div>
+            </div> */}
             <div className="review-body">
                 <div className="r-title">
                     <h2 className="r-sub-title">Anonymous User</h2>
                     <div className="starsI">
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarBorderIcon color="primary" />
-                        <StarBorderIcon color="primary" />
+                        <Rating className='sidebar__rating' name="read-only" value={4} size="medium" readOnly />
                     </div>
                 </div>
                 <h1 className="r-und-title">Reviewed on January 20, 2023</h1>
-                <h3 className="r-sub-info">Overall, Harry is a good partner. My only issue with him was that he was a late on some occurrences when meeting up due to the bus schedule. I would advice him to plan ahead of time. Besides that, he finished all his work on time and updated our group.</h3> 
+                <h3 className="r-sub-info">Overall, Harry is a good partner. My only issue with him was that he was a late on some occurrences when meeting up due to the bus schedule. I would advice him to plan ahead of time. Besides that, he finished all his work on time and updated our group.</h3>
             </div>
             <div className="review-body">
                 <div className="r-title">
                     <h2 className="r-sub-title">Anonymous User</h2>
                     <div className="starsI">
-                        <StarIcon color="primary" />
-                        <StarIcon color="primary" />
-                        <StarBorderIcon color="primary" />
-                        <StarBorderIcon color="primary" />
-                        <StarBorderIcon color="primary" />
+                        <Rating className='sidebar__rating' name="read-only" value={3} size="medium" readOnly />
                     </div>
                 </div>
                 <h1 className="r-und-title">Reviewed on October 17, 2023</h1>

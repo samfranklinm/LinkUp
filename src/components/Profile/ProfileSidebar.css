@@ -1,6 +1,6 @@
 .sidebar-container {
     background-color: black;
-    width: 200px;
+    width: 240px;
     height: 100vh;
     display: block;
     padding-left: 0px;
@@ -12,8 +12,8 @@
 }
 
 .sd-img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 144px;
     margin: 20px;
     padding: 0;
@@ -46,7 +46,6 @@
     justify-content: center;
     flex-flow: column;
     font-size: 20px;
-
 }
 
 .about-me:hover {

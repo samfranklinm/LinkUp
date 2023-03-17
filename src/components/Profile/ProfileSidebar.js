@@ -25,14 +25,21 @@ function ProfileSidebar() {
             <div className="sidebar-profile-img">
                 {
                     url.match('/myprofile') ?
-                        <img className="sd-img" src={user.photoUrl} alt="user-profile-img"></img>
+                        <div> <img className="sd-img" src={user && user.photoUrl} alt="user-profile-img"></img>
+                            <div className="h2-div">Harry Bell</div>
+                            <div className="stars">
+                                <Rating name="read-only" value={5} size="large" readOnly />
+                            </div>
+                        </div>
                         :
-                        <img className="sd-img" src={adam} alt="user-profile-img"></img>
+                        <div>
+                            <img className="sd-img" src={adam} alt="user-profile-img"></img>
+                            <div className="h2-div">Adam Dover</div>
+                            <div className="stars">
+                                <Rating name="read-only" value={5} size="large" readOnly />
+                            </div>
+                        </div>
                 }
-            </div>
-            <div className="h2-div">Adam Dover</div>
-            <div className="stars">
-                <Rating name="read-only" value={5} size="large" readOnly />
             </div>
             {
                 url.match('/myprofile') ?
