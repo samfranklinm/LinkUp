@@ -7,7 +7,7 @@ import { INITIAL_EVENTS, createEventId } from './event-utils'
 import interactionPlugin from '@fullcalendar/interaction'
 import './Schedule.css';
 
-function Schedule() {
+function UserSchedule() {
     return (
         <div>
             <Header />
@@ -101,4 +101,4 @@ function renderEventContent(eventInfo) {
     )
 }
 
-export default Schedule;
+export default UserSchedule;

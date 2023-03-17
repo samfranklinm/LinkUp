@@ -1,11 +1,3 @@
-/* 
-In the body of the page create the following components (all in this file)
-- AboutMe
-- Classes
-- MyGroups
-- Reviews 
-*/
-
 import Header from "../Header/Header";
 import ProfileSidebar from "./ProfileSidebar"
 import './AboutMe.css';
@@ -194,8 +186,6 @@ function Reviews(){
             </div>
 
         </div>
-
-
 
     )
 

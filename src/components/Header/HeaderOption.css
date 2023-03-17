@@ -3,14 +3,16 @@
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  color: #666666;
+  color: #797878;
   cursor: pointer;
 }
 
 .headerOption__title {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
+  color: rgb(70, 70, 70);
 }
+
 .headerOption__icon {
   object-fit: contain;
   height: 25px !important;
@@ -25,9 +27,11 @@
   .headerOption {
     margin-right: 10px;
   }
+
   .headerOption__title {
     font-size: 10px;
   }
+
   .headerOption__icon {
     height: 20px !important;
     width: 20px !important;

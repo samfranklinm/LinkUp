@@ -21,12 +21,14 @@ a {
     text-decoration: none;
 }
 
+.link:hover {}
+
 .menu-trigger img {
     position: absolute;
-    top: 10px;
-    right: 325px;
-    height: 40px;
-    width: 40px;
+    top: 08px;
+    right: 360px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -39,23 +41,14 @@ a {
 
 .dropdown-menu {
     position: absolute;
-    opacity: 0.8 !important;
+    opacity: 0.75 !important;
     color: #fff !important;
-    top: 60px;
-    right: 315px;
+    top: 72px;
+    right: 300px;
     background-color: #000000;
     border-radius: var(--border-radius);
     width: 120px;
     height: 140px;
-}
-
-.dropdown-menu img {
-    width: 20px;
-    height: 20px;
-    filter: invert(100%);
-    right: 20px;
-    padding-right: 10px;
-    padding-inline-start: -10px;
 }
 
 .dropdown-menu::before {
@@ -83,23 +76,31 @@ a {
     transition: var(--speed) ease;
 }
 
+#dropdownItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
 
-h3 {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    padding: 20px 0;
-    font-weight: 500;
-    font-size: 18px;
+.dropdown-menu img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+    margin-right: 10px;
+}
+
+.dropdown-menu a {
     color: var(--primary-text-color);
     line-height: 1.2rem;
+    cursor: pointer;
 }
 
-h3 span {
-    font-size: 14px;
-    color: var(--secondary-text-color);
-    font-weight: 400;
+.dropdown-menu a:hover {
+    color: var(--secondary-text-color)
 }
+
 
 .dropdown-menu ul li {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -113,17 +114,4 @@ h3 span {
 .dropdown-menu ul li:hover img {
     opacity: 1;
     cursor: pointer;
-}
-
-.dropdownItem img {
-    max-width: 20px;
-    margin-right: 10px;
-    opacity: 0.5;
-    transition: var(--speed);
-}
-
-.dropdownItem a {
-    max-width: 100px;
-    margin-left: 10px;
-    transition: var(--speed);
 }
