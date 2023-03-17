@@ -1,11 +1,12 @@
 import React from 'react'
 import './InputOption.css'
 
-function InputOption({Icon,title,color}) {
+function InputOption({ img, title, Icon }) {
     return (
         <div className="inputOption">
-            <Icon style = {{color:color}}/>
-            <h4>{title}</h4>
+            {img && <img style={{ width: '38px', height: '38px', color: '#000000' }} src={img}></img>}
+            {Icon && <Icon style={{ color: '#000000' }} />}
+            <h4 style={{ color: '#000000' }}>{title}</h4>
         </div>
     )
 }

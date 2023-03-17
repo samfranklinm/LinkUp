@@ -6,9 +6,9 @@ import { auth } from '../../firebase';
 import { logout } from '../../features/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
-import logoutuser from './icons/log-out.png';
-import myprofile from './icons/user.png';
-import usersettings from './icons/settings.png';
+import logoutuser from '../icons/log-out.png';
+import myprofile from '../icons/user.png';
+import usersettings from '../icons/settings.png';
 
 
 function NavMenu() {

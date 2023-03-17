@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
+import { db } from '../../firebase';
 import "./Feed.css";
 import InputOption from './InputOption'
 import Post from './Post'
 import CreateIcon from "@material-ui/icons/Create";
-import ImageIcon from '@material-ui/icons/Image';
-import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
-import EventNoteIcon from '@material-ui/icons/EventNote';
-import { useSelector } from 'react-redux';
-import { selectUser } from '../../features/userSlice';
-import { db } from '../../firebase';
+import gallery from '../icons/gallery.png'
+import calendar from '../icons/calendar.png'
+import video from '../icons/film.png'
 import firebase from "firebase";
 import FlipMove from "react-flip-move";
+import moment from 'moment';
 
 
 export default function Feed() {
@@ -35,7 +36,7 @@ export default function Feed() {
 
         db.collection('posts').add({
             name: user.displayName,
-            description: "We can use Moment (a timestamp library)",
+            description: moment().fromNow(),
             message: input,
             photoUrl: user.photoUrl || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -54,9 +55,9 @@ export default function Feed() {
                     </form>
                 </div>
                 <div className="feed__inputOptions">
-                    <InputOption Icon={ImageIcon} title="Photo" color="#70B5F9" />
-                    <InputOption Icon={SubscriptionsIcon} title="Video" color="#7FC15E" />
-                    <InputOption Icon={EventNoteIcon} title="Event" color="#E7A33E" />
+                    <InputOption img={gallery} title="Photo" />
+                    <InputOption img={video} title="Video" />
+                    <InputOption img={calendar} title="Event" />
                 </div>
             </div>
             <hr />
@@ -69,7 +70,7 @@ export default function Feed() {
                         name={name}
                         description={description}
                         message={message}
-                        photoUrl={user.photoUrl}
+                        photoUrl={photoUrl}
                     />
                 ))}
             </FlipMove>
