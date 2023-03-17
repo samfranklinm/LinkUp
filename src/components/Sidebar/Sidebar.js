@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import './Sidebar.css'
 import ProgressBar from './ProgressBar';
 import { Rating } from '@mui/material';
-import 'adam.jpg';
-import 'brandon.jpg';
-import 'samantha.jpg';
+import './adam.jpg';
+import './brandon.jpg';
+import './samantha.jpg';
 
 export default function Sidebar() {
 
@@ -24,7 +24,7 @@ export default function Sidebar() {
 
                 <div className="sidebar__top">
                     <Link to="/userprofile">
-                        <Avatar src="adam.jpg" className="sidebar__avatar">
+                        <Avatar src='./adam.jpg' className="sidebar__avatar">
                             {user.email[0].toUpperCase()}</Avatar>
                     </Link>
                     <h2>{'Adam Dover'}</h2>
@@ -35,7 +35,7 @@ export default function Sidebar() {
 
                 <div className="sidebar__top">
                     <Link to="/userprofile">
-                        <Avatar src="brandon.jpg" className="sidebar__avatar">
+                        <Avatar src="./brandon.jpg" className="sidebar__avatar">
                             {user.email[0].toUpperCase()}</Avatar>
                     </Link>
                     <h2>{'Brandon Lowe'}</h2>
@@ -46,7 +46,7 @@ export default function Sidebar() {
 
                 <div className="sidebar__top">
                     <Link to="/userprofile">
-                        <Avatar src="samantha.jpg" className="sidebar__avatar">
+                        <Avatar src="./samantha.jpg" className="sidebar__avatar">
                             {user.email[0].toUpperCase()}</Avatar>
                     </Link>
                     <h2>{'Samantha King'}</h2>
