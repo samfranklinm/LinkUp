@@ -1,9 +1,10 @@
 import Header from "../Header/Header";
 import ProfileSidebar from "./ProfileSidebar"
 import './AboutMe.css';
+import { Rating } from "@mui/material";
 
 function AboutMe() {
-    
+
     return (
         <>
             <div>
