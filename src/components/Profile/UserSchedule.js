@@ -1,7 +1,3 @@
-/* 
-In the body of the page create the following components (all in this file)
-
-*/
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import Header from '../Header/Header';
@@ -11,7 +7,7 @@ import './Schedule.css';
 const events = [
     { title: 'Meeting', start: new Date() }
 ]
-function Schedule() {
+function UserSchedule() {
     return (
         <div>
             <Header />
@@ -57,7 +53,6 @@ function Calendar() {
     )
 };
 
-// a custom render function
 function renderEventContent(eventInfo) {
     return (
         <>
@@ -67,4 +62,4 @@ function renderEventContent(eventInfo) {
     )
 }
 
-export default Schedule;
+export default UserSchedule;
