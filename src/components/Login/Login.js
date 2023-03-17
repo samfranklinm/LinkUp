@@ -62,7 +62,7 @@ export default function Login() {
         alt="linkup logo"
       />
       <form>
-        <input
+        {/* <input
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full name"
@@ -75,7 +75,7 @@ export default function Login() {
           type="text"
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
-        />
+        /> */}
 
         <input
           value={email}

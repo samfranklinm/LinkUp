@@ -3,11 +3,11 @@ import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import Header from '../Header/Header';
 import ProfileSidebar from './ProfileSidebar';
-import { INITIAL_EVENTS, createEventId } from './event-utils'
+import { INITIAL_EVENTS, createEventId } from './event-utils_user'
 import interactionPlugin from '@fullcalendar/interaction'
 import './Schedule.css';
 
-function Schedule() {
+function UserSchedule() {
     return (
         <div>
             <Header />
@@ -101,4 +101,4 @@ function renderEventContent(eventInfo) {
     )
 }
 
-export default Schedule;
+export default UserSchedule;

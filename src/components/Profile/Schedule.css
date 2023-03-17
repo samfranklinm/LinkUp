@@ -60,3 +60,9 @@ body {
 .fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
     height: 100%;
 }
+
+.fc-event-main {
+    display: flex;
+    justify-content: center;
+    background-color: #96ADFC;
+}
