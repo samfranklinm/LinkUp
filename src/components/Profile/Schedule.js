@@ -1,3 +1,7 @@
+/* 
+In the body of the page create the following components (all in this file)
+
+*/
 import { useState } from 'react';
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
@@ -7,7 +11,9 @@ import { INITIAL_EVENTS, createEventId } from './event-utils'
 import interactionPlugin from '@fullcalendar/interaction'
 import './Schedule.css';
 
-function Schedule() {
+
+
+function MyCalendar() {
     return (
         <div>
             <Header />
@@ -17,7 +23,7 @@ function Schedule() {
                     <h2 className="schedule-text">Schedule</h2>
                     <hr className="hr-container"></hr>
                     <div className="calendar-container">
-                        <Calendar />
+                        <Schedule />
                     </div>
                 </div>
             </div>
@@ -26,7 +32,7 @@ function Schedule() {
     )
 }
 
-function Calendar() {
+function Schedule() {
     const [state, setState] = useState([]);
 
     function handleEventClick(clickInfo) {
@@ -55,6 +61,7 @@ function Calendar() {
             })
         }
     };
+
 
     return (
         <div className='calendar'>
@@ -101,4 +108,4 @@ function renderEventContent(eventInfo) {
     )
 }
 
-export default Schedule;
+export default MyCalendar;

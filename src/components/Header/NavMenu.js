@@ -41,7 +41,7 @@ function NavMenu() {
     return (
         <div className='menu-container' ref={menuRef}>
             <div className='menu-trigger' onClick={() => { setOpen(!open) }}>
-                <img src={"https://spng.pngfind.com/pngs/s/676-6764065_default-profile-picture-transparent-hd-png-download.png"} alt="profile_pic"></img>
+                <img src={user.photoUrl} alt="profile_pic"></img>
             </div>
             <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
                 <ul>
